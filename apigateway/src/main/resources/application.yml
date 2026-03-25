@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: apigateway
+
+
+  cloud:
+    gateway:
+      routes:
+        - id: feesmsid
+          uri: lb://feesms
+          predicates:
+            - Path=/fees/**
+        - id: studentmsid
+          uri: lb://studentms
+          predicates:
+            - Path=/students/**
+            
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+      
+management:
+  endpoints:
+    web:
+      exposure:
+         include: '*'
