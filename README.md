@@ -12,7 +12,7 @@ studentms: A Spring Boot microservice, to manage the students and to invoke stud
 feesms: A Spring Boot microservice to manage student fee details.
 
 Technology Stack:
-Back-end framework & Microservices - Java 17, Spring Boot 3, Spring MVC, Spring Security (OAuth2), Microservices
+Back-end framework & Microservices - Java 17, Spring Boot 3, Spring MVC, Spring Security (OAuth2), Microservices, Netflix Eureka
 API & Data Interchange - RESTful API, YML
 Data Access & Persistence - Spring Data JPA, IBM DB2
 DevOps, Containerization & Infrastructure - Docker, Docker Hub, Apache Tomcat
